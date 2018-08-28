@@ -1,0 +1,37 @@
+{
+  "env": {
+    "es": {
+      "presets": [
+        [
+          "kamlesh",
+          {
+            "targets": {
+              "browsers": ["last 2 Chrome versions", "safari >=11"]
+            },
+            "loose": true,
+            "modules": false,
+            "useBuiltIns": false
+          }
+        ]
+      ],
+      "plugins": [
+        "styled-components"
+      ]
+    },
+    "cjs": {
+      "presets": [
+        [
+          "kamlesh",
+          {
+            "loose": true,
+            "modules": "commonjs",
+            "useBuiltIns": false
+          }
+        ]
+      ],
+      "plugins": [
+        "styled-components"
+      ]
+    }
+  }
+}

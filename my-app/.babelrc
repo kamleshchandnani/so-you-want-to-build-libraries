@@ -1,0 +1,14 @@
+{
+  "presets": [
+    [
+      "kamlesh",
+      {
+        "targets": {
+          "browsers": ["last 2 Chrome versions", "safari >=11"]
+        },
+        "loose": false,
+        "useBuiltIns": false
+      }
+    ]
+  ]
+}

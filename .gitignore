@@ -1,0 +1,21 @@
+# dependencies
+node_modules
+
+yarn-error.log
+build
+es
+cjs
+
+build
+es
+cjs
+dist
+
+# misc
+.DS_Store
+.env
+npm-debug.log*
+lerna-debug.log*
+yarn-dubug.log*
+
+

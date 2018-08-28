@@ -1,0 +1,45 @@
+{
+  "name": "so-you-want-to-build-libraries",
+  "author": "Kamlesh Chandnani <kamlesh.chandnani@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "my-app",
+    "packages/*"
+  ],
+  "scripts": {
+    "postinstall": "run-s build",
+    "build": "lerna run --scope={api,ui-kit} build",
+    "precommit": "lint-staged",
+    "commit": "git-cz"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint",
+      "stylelint"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "commitizen": "^2.10.1",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^0.14.3",
+    "lerna": "^3.1.4",
+    "lint-staged": "^7.2.2",
+    "npm-run-all": "^4.1.3",
+    "rimraf": "^2.6.2",
+    "stylelint": "^9.5.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.3.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
