@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { get } from 'api';
 import { Card, Size, View, Button, Text, Flex, Space, Tag } from 'ui-kit';
+// import Card from 'ui-kit/Card';
+// import Size from 'ui-kit/Size';
 
 export default class HotelList extends Component {
   state={

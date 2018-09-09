@@ -2,7 +2,8 @@
   "name": "ui-kit",
   "version": "0.0.1",
   "description": "",
-  "main": "dist/index",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "scripts": {
     "clean": "rimraf cjs es dist",
     "generate": "node ./src/generate.js",
@@ -12,11 +13,15 @@
     "build:dist:cjs": "BABEL_ENV=cjs rollup -c",
     "build:dist:es": "BABEL_ENV=es rollup -c",
     "build:index": "node ./src/scripts/generateIndex.js",
+    "build:stats": "BABEL_ENV=cjs babel stats/test.js -o ./stats/test.cjs.js",
+    "build:stats:es": "BABEL_ENV=es babel stats/test.js -o ./stats/test.es.js",
+    "show:stats": "node ./stats/compare.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cli-table2": "^0.2.0",
     "mkdirp": "^0.5.1",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",

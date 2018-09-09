@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "APP_PUBLIC_PATH=/ NODE_ENV=development webpack-dev-server --config ./webpack.config.js --progress --hot",
-    "build": "APP_PUBLIC_PATH=/ NODE_ENV=development webpack --config ./webpack.config.js --progress --hot"
+    "build": "APP_PUBLIC_PATH=/ NODE_ENV=production webpack --config ./webpack.config.js --progress --hot"
   },
   "dependencies": {
     "clean-webpack-plugin": "0.1.19",
