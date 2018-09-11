@@ -4,8 +4,9 @@
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "my-app",
-    "packages/*"
+    "api",
+    "ui-kit",
+    "my-app"
   ],
   "scripts": {
     "postinstall": "run-s build",

@@ -2,8 +2,8 @@
   "name": "ui-kit",
   "version": "0.0.1",
   "description": "",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "main": "dist/index",
+  "sideEffects":false,
   "scripts": {
     "clean": "rimraf cjs es dist",
     "generate": "node ./src/generate.js",
